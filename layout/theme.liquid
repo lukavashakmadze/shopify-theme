@@ -1,9 +1,8 @@
 <!doctype html>
-{%- if shop.locale == 'ar' -%}
-<html class="no-js" lang="{{ request.locale.iso_code }}" dir="rtl">
-{%- else -%}
-<html class="no-js" lang="{{ request.locale.iso_code }}">
-{%- endif -%}
+<html
+  class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}"
+  lang="{{ request.locale.iso_code }}"
+>
   <head>
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
