@@ -66,11 +66,6 @@
           class="product-form-buttons spacing-style{% if block.settings.stacking %} product-form-buttons--stacked{% endif %}"
           style="{% render 'spacing-style', settings: block.settings %}"
         >
-          {% for variant in product.variants %}
-            {% if variant.available == false %}
-              <p class="out-of-stock-variant">Variant: {{ variant.title }} is out of stock</p>
-            {% endif %}
-          {% endfor %}
           {% content_for 'block', type: 'quantity', id: 'quantity' %}
           {% content_for 'block',
             type: 'add-to-cart',

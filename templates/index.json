@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "hero_jVaWmY": {
       "type": "hero",
@@ -64,6 +65,7 @@
       ],
       "name": "t:names.hero",
       "settings": {
+        "link": "",
         "open_in_new_tab": false,
         "media_type_1": "image",
         "media_type_2": "image",
@@ -213,6 +215,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -345,10 +348,46 @@
         "padding-block-start": 48,
         "padding-block-end": 96
       }
+    },
+    "section_faq_custom_NmyHDG": {
+      "type": "section-faq-custom",
+      "blocks": {
+        "faq_item_yDRjRV": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "<p>We offer a 30-day return policy on all items. Please contact our customer service team for more information.</p>"
+          }
+        },
+        "faq_item_beYXkF": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long does shipping take?",
+            "answer": "<p>Standard shipping typically takes 3-5 business days. Express shipping options are available at checkout.</p>"
+          }
+        },
+        "faq_item_kEFki3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do you ship internationally?",
+            "answer": "<p>Yes, we ship to most countries worldwide. International shipping rates and times vary by destination.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_yDRjRV",
+        "faq_item_beYXkF",
+        "faq_item_kEFki3"
+      ],
+      "name": "Questions & Answers",
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "product_list_qU3bEB"
+    "product_list_qU3bEB",
+    "section_faq_custom_NmyHDG"
   ]
 }
